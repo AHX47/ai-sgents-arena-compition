@@ -13,7 +13,7 @@
 [![Mermaid Diagrams](https://img.shields.io/badge/diagrams-Mermaid-blue)](https://mermaid-js.github.io/)
 
 <p align="center">
-  <img src="assets/arena_banner.png" alt="AI Agents Arena" width="600"/>
+  <img src="Gemini_Generated_Image_q0ons6q0ons6q0on.png" alt="AI Agents Arena" width="600"/>
 </p>
 
 ---
