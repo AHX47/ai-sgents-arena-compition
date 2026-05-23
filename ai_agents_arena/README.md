@@ -59,6 +59,16 @@ Best for: Coding, search, legal, healthcare, enterprise, and niche tasks.
 Idea: A specialist that beats generalists in its lane.
 
 The real shift in AI is not bigger models. It’s better model selection.
+<table>
+  <tr>
+    <td><img src="../Gemini_Generated_Image_q0ons6q0ons6q0on.png" alt="Banner" width="400"/></td>
+    <td>
+      <a href="https://www.linkedin.com/posts/rakeshgohel01_ai-agents-work-best-with-model-strategy-share-7459580876272676864-Zaas/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGDFZk0B5UAdhvASvODcsdm_xBI8G4mdPGA" target="_blank">
+        <img src="../arena.gif" alt="Demo" width="400"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
 Use LLM for general work.
 Use LRM for hard thinking.
