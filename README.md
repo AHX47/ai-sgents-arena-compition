@@ -12,10 +12,16 @@
 [![C++17](https://img.shields.io/badge/C++-17-00599C.svg)](https://isocpp.org/)
 [![Mermaid Diagrams](https://img.shields.io/badge/diagrams-Mermaid-blue)](https://mermaid-js.github.io/)
 
-<div style="display: flex; justify-content: left; gap: 10px;">
-  <img src="Gemini_Generated_Image_q0ons6q0ons6q0on.png" alt="Banner" width="400"/>
-  <img src="arena.gif" alt="Demo" width="400"/>
-</div>
+<table>
+  <tr>
+    <td><img src="Gemini_Generated_Image_q0ons6q0ons6q0on.png" alt="Banner" width="400"/></td>
+    <td>
+      <a href="https://www.linkedin.com/posts/rakeshgohel01_ai-agents-work-best-with-model-strategy-share-7459580876272676864-Zaas/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGDFZk0B5UAdhvASvODcsdm_xBI8G4mdPGA" target="_blank">
+        <img src="arena.gif" alt="Demo" width="400"/>
+      </a>
+    </td>
+  </tr>
+</table>
 ---
 
 ## 📚 Table of Contents
