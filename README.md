@@ -12,8 +12,9 @@
 [![C++17](https://img.shields.io/badge/C++-17-00599C.svg)](https://isocpp.org/)
 [![Mermaid Diagrams](https://img.shields.io/badge/diagrams-Mermaid-blue)](https://mermaid-js.github.io/)
 
-<p align="center">
+<p align="left">
   <img src="Gemini_Generated_Image_q0ons6q0ons6q0on.png" alt="AI Agents Arena" width="600"/>
+  <img src="arena.gif" alt="AI Agents Arena" width="600"/>
 </p>
 
 ---
