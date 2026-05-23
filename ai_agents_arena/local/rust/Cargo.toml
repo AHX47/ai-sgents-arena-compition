@@ -1,0 +1,85 @@
+[package]
+name    = "ai-agents-arena"
+version = "0.1.0"
+edition = "2021"
+description = "8 AI Agent types — local Rust inference with candle"
+
+[[bin]]
+name = "ai_agents_arena"
+path = "src/main.rs"
+
+[dependencies]
+# HuggingFace candle — core tensor + inference
+candle-core         = { version = "0.8", features = [] }
+candle-nn           = { version = "0.8" }
+candle-transformers = { version = "0.8" }
+
+# Tokenization
+tokenizers = { version = "0.20", features = ["http"] }
+
+# HuggingFace Hub for model download
+hf-hub = { version = "0.3", features = ["tokio"] }
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# CLI parsing
+clap = { version = "4", features = ["derive"] }
+
+# Error handling
+anyhow = "1"
+
+# Serialization
+serde       = { version = "1", features = ["derive"] }
+serde_json  = "1"
+
+# HTTP for OpenRouter fallback
+reqwest = { version = "0.12", features = ["json", "blocking"] }
+
+[features]
+default = []
+
+# NVIDIA CUDA — requires CUDA toolkit installed
+cuda = [
+    "candle-core/cuda",
+    "candle-nn/cuda",
+    "candle-transformers/cuda",
+]
+
+# Apple Metal — macOS only
+metal = [
+    "candle-core/metal",
+    "candle-nn/metal",
+    "candle-transformers/metal",
+]
+
+# Accelerate — macOS BLAS/vecLib (CPU speedup on Apple Silicon)
+accelerate = [
+    "candle-core/accelerate",
+    "candle-nn/accelerate",
+    "candle-transformers/accelerate",
+]
+
+[profile.release]
+opt-level = 3
+lto       = "fat"
+codegen-units = 1   # better optimization at cost of compile time
+
+[profile.dev]
+opt-level = 1       # faster debug builds while still usable
+
+# ── Build instructions ────────────────────────────────────────────────────────
+# CPU (any machine):
+#   cargo build --release
+#
+# NVIDIA GPU:
+#   cargo build --release --features cuda
+#
+# Apple Silicon (Metal):
+#   cargo build --release --features metal,accelerate
+#
+# Run all 8 agent types:
+#   cargo run --release -- --all --prompt "Explain attention in transformers"
+#
+# Run just the reasoning agent:
+#   cargo run --release -- --agent lrm --prompt "Prove that sqrt(2) is irrational"

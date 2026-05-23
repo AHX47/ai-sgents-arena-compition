@@ -1,0 +1,29 @@
+# ── Core ──────────────────────────────────────────────────────────────────────
+requests>=2.31.0          # OpenRouter API calls
+python-dotenv>=1.0.0      # .env file support
+
+# ── Local inference (optional) ────────────────────────────────────────────────
+# CPU only:
+#   pip install llama-cpp-python
+#
+# NVIDIA CUDA:
+#   CMAKE_ARGS="-DGGML_CUDA=on" pip install llama-cpp-python --force-reinstall
+#
+# Apple Metal:
+#   CMAKE_ARGS="-DGGML_METAL=on" pip install llama-cpp-python --force-reinstall
+#
+# Intel OpenVINO (VPU/NPU):
+#   pip install openvino optimum[openvino]
+
+# ── HuggingFace (for model download + fine-tuning) ────────────────────────────
+huggingface-hub>=0.21.0
+transformers>=4.40.0
+
+# ── Optional fine-tuning stack (uncomment for GPU machines) ──────────────────
+# torch>=2.2.0
+# peft>=0.10.0
+# trl>=0.8.0
+# bitsandbytes>=0.43.0
+
+# ── Vision (for VLM agent with local images) ─────────────────────────────────
+Pillow>=10.0.0
